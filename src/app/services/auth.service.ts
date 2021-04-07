@@ -38,7 +38,7 @@ export class AuthService {
 
   loginUser(email: string, password) {
     return new Promise((resolve, reject) => {
-      this.http.post('https://sc-peckoko-backend.herokuapp.com/auth/login', {email: email, password: password}).subscribe(
+      this.http.post('https://sc-peckoko-backend.herokuapp.com/api/auth/login', {email: email, password: password}).subscribe(
         (response: {userId: string, token: string}) => {
           this.userId = response.userId;
           this.authToken = response.token;

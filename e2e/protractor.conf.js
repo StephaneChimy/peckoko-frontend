@@ -12,7 +12,8 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  // baseUrl: 'http://localhost:4200/',
+  baseUrl: 'https://sc-peckoko.netlify.app/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
